@@ -1,0 +1,62 @@
+﻿@page
+@model w1.Pages.PaisesModel
+@{
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <h3>
+                Listado Países
+            </h3>
+        </div>
+        <div class="col-md-6">
+            <a asp-page="NuevoPais" class="btn btn-primary float-right">Nuevo</a>
+        </div>
+        
+    </div>
+  
+    <hr />
+    <div class="card">
+        <div class="card-body">
+            <table class="table table-striped" >
+                <thead>
+                    <tr>
+                        <th>
+                            ID
+                        </th>
+                        <th>
+                            Pais
+                        </th>
+                        <th>
+                            Capital
+                        </th>
+                        <th>
+                            Continente
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            1
+                        </td>
+                        <td>
+                            Alemania
+                        </td>
+                        <td>
+                            Berlin
+                        </td>
+                        <td>
+                            Europa
+                        </td>
+                        <td>
+                            <button class="btn btn-warning">Editar</button>
+                            <button class="btn btn-danger">Eliminar</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

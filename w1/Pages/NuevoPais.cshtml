@@ -1,0 +1,39 @@
+﻿@page
+@model w1.Pages.NuevoPaisModel
+@{
+}
+
+<div class="container">
+    <h3>
+        Nuevo País
+    </h3>
+    <hr />
+    <div class="card">
+        <div class="card-body">
+            <form method="post">
+                <div class="form-group">
+                    <label>País</label>
+                    <input class="form-control" type="text" />
+                </div>
+                <div class="form-group">
+                    <label>Capital</label>
+                    <input class="form-control" type="text" />
+                </div>
+                <div class="form-group">
+                    <label>Continente</label>
+                    <select class="form-control">
+                        <option value="">Seleccionar Continente</option>
+                        <option value="1">America</option>
+                        <option value="2">Asia</option>
+                        <option value="3">Europa</option>
+                        <option value="4">Oceanía</option>
+                        <option value="5">África</option>
+                        <option value="6">Antártida</option>
+                    </select>
+                </div>
+                <a asp-page="Paises" class="btn btn-secondary">Cancelar</a>
+                <button type="submit" class="btn btn-primary">Guardar</button>
+            </form>
+        </div>
+    </div>
+</div>
