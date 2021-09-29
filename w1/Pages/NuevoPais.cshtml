@@ -12,16 +12,18 @@
         <div class="card-body">
             <form method="post">
                 <div class="form-group">
-                    <label>País</label>
-                    <input class="form-control" type="text" />
+                    <label asp-for="Pais"></label>
+                    <input asp-for="Pais" class="form-control" type="text" />
+                    <span asp-validation-for="Pais" class="text-danger"></span>
                 </div>
                 <div class="form-group">
-                    <label>Capital</label>
-                    <input class="form-control" type="text" />
+                    <label asp-for="Capital"></label>
+                    <input asp-for="Capital" class="form-control" type="text" />
+                    <span asp-validation-for="Capital" class="text-danger"></span>
                 </div>
                 <div class="form-group">
-                    <label>Continente</label>
-                    <select class="form-control">
+                    <label asp-for="ContinenteId"></label>
+                    <select asp-for="ContinenteId" class="form-control">
                         <option value="">Seleccionar Continente</option>
                         <option value="1">America</option>
                         <option value="2">Asia</option>
@@ -30,9 +32,11 @@
                         <option value="5">África</option>
                         <option value="6">Antártida</option>
                     </select>
+                    <span asp-validation-for="ContinenteId" class="text-danger"></span>
                 </div>
                 <a asp-page="Paises" class="btn btn-secondary">Cancelar</a>
                 <button type="submit" class="btn btn-primary">Guardar</button>
+                <div asp-validation-summary="All" class="text-danger mt-4"></div>
             </form>
         </div>
     </div>
